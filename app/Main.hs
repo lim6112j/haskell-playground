@@ -1,6 +1,6 @@
 module Main where
 
 import Lib
-
-main :: IO ()
-main = someFunc
+import IOLib
+main :: IO()
+main = print(evenSum [1..5])

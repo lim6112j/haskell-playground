@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e0f5a8afbd5b955e15500e2e145e67c090412dd17778641a01623121224348ab
+-- hash: de9abb6ea5ac994b03a08fbcd0244d80007594696ee94b0ecff157abc95a7138
 
 name:           playground
 version:        0.1.0.0
@@ -27,6 +27,7 @@ source-repository head
 
 library
   exposed-modules:
+      IOLib
       Lib
   other-modules:
       Paths_playground
