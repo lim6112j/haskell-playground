@@ -1,5 +1,12 @@
 module IOLib where
-import Data.Maybe
+import Data.Maybe/reads :: (Read a) => String -> [(a, String)]
+
+-- Prelude> reads "5" :: [(Double, String)]
+-- [(5.0,"")]
+-- Prelude> reads "5ds" :: [(Double, String)]
+-- [(5.0,"ds")]
+-- Prelude> reads "dffd" :: [(Double, String)]
+-- []
 toList :: String -> [Integer]
 toList input = read("[" ++ input ++ "]")
 maybeRead :: Read a => String -> Maybe a
