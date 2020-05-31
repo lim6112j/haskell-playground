@@ -1,5 +1,5 @@
 module IOLib where
-import Data.Maybe/reads :: (Read a) => String -> [(a, String)]
+import Data.Maybe
 
 -- Prelude> reads "5" :: [(Double, String)]
 -- [(5.0,"")]

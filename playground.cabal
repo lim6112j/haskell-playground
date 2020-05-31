@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: de9abb6ea5ac994b03a08fbcd0244d80007594696ee94b0ecff157abc95a7138
+-- hash: 75e733870add33b72846edbcfeed129f656e796c47411ab553d891dbdce36e08
 
 name:           playground
 version:        0.1.0.0
@@ -29,6 +29,7 @@ library
   exposed-modules:
       IOLib
       Lib
+      Types
   other-modules:
       Paths_playground
   hs-source-dirs:
@@ -43,7 +44,7 @@ executable playground-exe
       Paths_playground
   hs-source-dirs:
       app
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -XExistentialQuantification
   build-depends:
       base >=4.7 && <5
     , playground
