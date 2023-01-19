@@ -18,4 +18,10 @@ packages:
       size: 1519
   original:
     hackage: splitmix-0.1.0.4@sha256:db25c2e17967aa6b6046ab8b1b96ba3f344ca59a62b60fb6113d51ea305a3d8e,6537
-snapshots: []
+snapshots:
+- completed:
+    sha256: f5d9002479d87103fd070f17cfe71fcd2147676f1e47a2dabca5ab91a42b846d
+    size: 619399
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/19/23.yaml
+  original:
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/19/23.yaml

@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 281028cdefac78f68d7143e99f023013370df21ed88e169527592cbf36bff497
+-- hash: 0655bf20045be17107c194843e7d25adfb7bf0fea2e189e2215744c160869bae
 
 name:           playground
 version:        0.1.0.0
@@ -90,7 +90,7 @@ executable simplereader-exe
       simplereader
   build-depends:
       base >=4.7 && <5
-    , containers >=0.6.6
+    , containers >=0.6.3
     , mtl >=2.0 && <2.3
     , random
   default-language: Haskell2010
