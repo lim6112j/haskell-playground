@@ -43,6 +43,10 @@ executables:
     source-dirs: simplereader
     dependencies:
       - containers>=0.6.6
+  reversepolish-exe:
+    main: reversepolish.hs
+    source-dirs: reversepolish
+
 tests:
   playground-test:
     main: Spec.hs

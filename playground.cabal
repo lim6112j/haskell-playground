@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a42a616a9f2881a8beecb4121db6e7b7f75a2bc4ee1d66ac613008059d2f94db
+-- hash: c717486502133a015f1ec00800339242fa1da1c79011fc201976ae05ee4bdd05
 
 name:           playground
 version:        0.1.0.0
@@ -52,6 +52,18 @@ executable playground-exe
     , containers
     , mtl >=2.0 && <2.3
     , playground
+  default-language: Haskell2010
+
+executable reversepolish-exe
+  main-is: reversepolish.hs
+  other-modules:
+      Paths_playground
+  hs-source-dirs:
+      reversepolish
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , mtl >=2.0 && <2.3
   default-language: Haskell2010
 
 executable simplereader-exe
