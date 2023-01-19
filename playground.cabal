@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 0655bf20045be17107c194843e7d25adfb7bf0fea2e189e2215744c160869bae
+-- hash: 7411f1d1089d981d20470f74abc30d36a20da0664cef03f4b24ab5f6d6d8ff63
 
 name:           playground
 version:        0.1.0.0
@@ -39,6 +39,21 @@ library
     , containers
     , mtl >=2.0 && <2.3
     , random
+    , transformers
+  default-language: Haskell2010
+
+executable liftio
+  main-is: liftio.hs
+  other-modules:
+      Paths_playground
+  hs-source-dirs:
+      liftio
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , mtl >=2.0 && <2.3
+    , random
+    , transformers
   default-language: Haskell2010
 
 executable playground-exe
@@ -54,6 +69,7 @@ executable playground-exe
     , mtl >=2.0 && <2.3
     , playground
     , random
+    , transformers
   default-language: Haskell2010
 
 executable reversepolish-exe
@@ -67,6 +83,7 @@ executable reversepolish-exe
     , containers
     , mtl >=2.0 && <2.3
     , random
+    , transformers
   default-language: Haskell2010
 
 executable rwst-exe
@@ -80,6 +97,7 @@ executable rwst-exe
     , containers
     , mtl >=2.0 && <2.3
     , random
+    , transformers
   default-language: Haskell2010
 
 executable simplereader-exe
@@ -93,6 +111,7 @@ executable simplereader-exe
     , containers >=0.6.3
     , mtl >=2.0 && <2.3
     , random
+    , transformers
   default-language: Haskell2010
 
 executable state-exe
@@ -106,6 +125,7 @@ executable state-exe
     , containers
     , mtl >=2.0 && <2.3
     , random
+    , transformers
   default-language: Haskell2010
 
 test-suite playground-test
@@ -122,4 +142,5 @@ test-suite playground-test
     , mtl >=2.0 && <2.3
     , playground
     , random
+    , transformers
   default-language: Haskell2010

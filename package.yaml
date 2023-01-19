@@ -24,6 +24,7 @@ dependencies:
   - mtl >=2.0 && < 2.3
   - containers
   - random
+  - transformers
 
 library:
   source-dirs: src
@@ -53,6 +54,11 @@ executables:
   state-exe:
     main: state.hs
     source-dirs: state
+  liftio:
+    main: liftio.hs
+    source-dirs: liftio
+    dependencies:
+      - transformers
 tests:
   playground-test:
     main: Spec.hs
