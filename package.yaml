@@ -50,7 +50,9 @@ executables:
   rwst-exe:
     main: rwst.hs
     source-dirs: rwst
-
+  state-exe:
+    main: state.hs
+    source-dirs: state
 tests:
   playground-test:
     main: Spec.hs
