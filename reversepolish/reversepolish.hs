@@ -31,3 +31,5 @@ evalRPN expr = evalStateT evalRPN' []
     step "*" = processTops (*)
     step t = readSafe t >>= push
     processTops op = flip op <$> pop <*> pop >>= push
+main :: IO ()
+main = putStrLn "hello world"

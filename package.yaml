@@ -23,6 +23,7 @@ dependencies:
   - base >= 4.7 && < 5
   - mtl >=2.0 && < 2.3
   - containers
+  - random
 
 library:
   source-dirs: src
@@ -46,6 +47,9 @@ executables:
   reversepolish-exe:
     main: reversepolish.hs
     source-dirs: reversepolish
+  rwst-exe:
+    main: rwst.hs
+    source-dirs: rwst
 
 tests:
   playground-test:
