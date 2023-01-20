@@ -59,6 +59,9 @@ executables:
     source-dirs: liftio
     dependencies:
       - transformers
+  arrow:
+    main: arrow.hs
+    source-dirs: arrow
 tests:
   playground-test:
     main: Spec.hs
