@@ -16,7 +16,7 @@ import Control.Monad.Error.Class
 import TextShow
 import Prelude hiding (null, empty, words)
 rpns :: [Text]
-rpns = ["answer", "12 13 + 1", "2 +", "x y +", "1x +", "1 22 1 22  1 22 0 2 + + * * *", "10 1 2 + 2 2 1 2 * + * * * 1 x 2 + + +"]
+rpns = ["answer", "12 13 + 1", "2 +", "x y +", "1x +", "1 22 1 22 0 2 + + * * *", "10 1 2 + 2 2 1 2 * + * * * 1 x 2 + + +"]
 type Stack = [Integer]
 type EnvVars = [(Text, Integer)]
 data EvalError where
@@ -88,13 +88,8 @@ rpnerr3 = "2 +"
 rpnerr4 = "answer 1 +"
 rpnerr5 = "1x +"
 env :: EnvVars
-env = [("answer", 11)]
+env = [("answer", 11), ("x", 1)]
 main :: IO ()
 main = do 
-  print $ evalRPNOnceRun rpn env
-  print $ evalRPNOnceRun rpnerr env
-  print $ evalRPNOnceRun rpnerr2 env
-  print $ evalRPNOnceRun rpnerr3 env
-  print $ evalRPNOnceRun rpnerr4 env
-  print $ evalRPNOnceRun rpnerr5 env
+  print $ mapM evalRPNOnceRun rpns env
 
