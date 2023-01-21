@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 35c2e0f7dedc8ca109f5e7f0a02def5a69d5d781ebf83a44769153c20f8fcaed
+-- hash: 15580de80399e1c7cc74b80d2957f002f0baf3edcc15070fcecde5abde36354b
 
 name:           playground
 version:        0.1.0.0
@@ -39,6 +39,8 @@ library
     , containers
     , mtl >=2.0 && <2.3
     , random
+    , text
+    , text-show
     , transformers
   default-language: Haskell2010
 
@@ -53,6 +55,24 @@ executable arrow
     , containers
     , mtl >=2.0 && <2.3
     , random
+    , text
+    , text-show
+    , transformers
+  default-language: Haskell2010
+
+executable exception
+  main-is: exception.hs
+  other-modules:
+      Paths_playground
+  hs-source-dirs:
+      exceptionT
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , mtl >=2.0 && <2.3
+    , random
+    , text
+    , text-show
     , transformers
   default-language: Haskell2010
 
@@ -67,6 +87,8 @@ executable liftio
     , containers
     , mtl >=2.0 && <2.3
     , random
+    , text
+    , text-show
     , transformers
   default-language: Haskell2010
 
@@ -83,6 +105,8 @@ executable playground-exe
     , mtl >=2.0 && <2.3
     , playground
     , random
+    , text
+    , text-show
     , transformers
   default-language: Haskell2010
 
@@ -97,6 +121,8 @@ executable reversepolish-exe
     , containers
     , mtl >=2.0 && <2.3
     , random
+    , text
+    , text-show
     , transformers
   default-language: Haskell2010
 
@@ -111,6 +137,8 @@ executable rwst-exe
     , containers
     , mtl >=2.0 && <2.3
     , random
+    , text
+    , text-show
     , transformers
   default-language: Haskell2010
 
@@ -125,6 +153,8 @@ executable simplereader-exe
     , containers >=0.6.3
     , mtl >=2.0 && <2.3
     , random
+    , text
+    , text-show
     , transformers
   default-language: Haskell2010
 
@@ -139,6 +169,8 @@ executable state-exe
     , containers
     , mtl >=2.0 && <2.3
     , random
+    , text
+    , text-show
     , transformers
   default-language: Haskell2010
 
@@ -156,5 +188,7 @@ test-suite playground-test
     , mtl >=2.0 && <2.3
     , playground
     , random
+    , text
+    , text-show
     , transformers
   default-language: Haskell2010

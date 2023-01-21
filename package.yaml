@@ -25,7 +25,8 @@ dependencies:
   - containers
   - random
   - transformers
-
+  - text
+  - text-show
 library:
   source-dirs: src
 
@@ -62,6 +63,11 @@ executables:
   arrow:
     main: arrow.hs
     source-dirs: arrow
+  exception:
+    main: exception.hs
+    source-dirs: exceptionT
+    dependencies:
+      - text-show
 tests:
   playground-test:
     main: Spec.hs
