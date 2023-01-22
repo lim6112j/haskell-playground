@@ -68,6 +68,10 @@ executables:
     source-dirs: exceptionT
     dependencies:
       - text-show
+  writer:
+    main: writer.hs
+    source-dirs: writerT
+
 tests:
   playground-test:
     main: Spec.hs

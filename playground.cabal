@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 15580de80399e1c7cc74b80d2957f002f0baf3edcc15070fcecde5abde36354b
+-- hash: f3cd3148255b90dd333e0781ce95c82bc11386e9e26ab91a4dac69d83bafe71c
 
 name:           playground
 version:        0.1.0.0
@@ -164,6 +164,22 @@ executable state-exe
       Paths_playground
   hs-source-dirs:
       state
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , mtl >=2.0 && <2.3
+    , random
+    , text
+    , text-show
+    , transformers
+  default-language: Haskell2010
+
+executable writer
+  main-is: writer.hs
+  other-modules:
+      Paths_playground
+  hs-source-dirs:
+      writerT
   build-depends:
       base >=4.7 && <5
     , containers
