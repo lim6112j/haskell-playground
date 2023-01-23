@@ -71,7 +71,9 @@ executables:
   writer:
     main: writer.hs
     source-dirs: writerT
-
+  lenses:
+    main: lenses.hs
+    source-dirs: lenses
 tests:
   playground-test:
     main: Spec.hs
