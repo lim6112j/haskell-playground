@@ -75,6 +75,9 @@ executables:
   lenses:
     main: lenses.hs
     source-dirs: lenses
+  traversable:
+    main: traversable.hs
+    source-dirs: traversable
 tests:
   playground-test:
     main: Spec.hs
