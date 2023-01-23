@@ -1,13 +1,15 @@
+{-# LANGUAGE TemplateHaskell #-}
+import Control.Lens
 data Point = Point
-  { positionX :: Double
-    , positionY :: Double
+  { _positionX :: Double
+    , _positionY :: Double
   } deriving (Show)
-
+makeLenses ''Point
 data Segment = Segment
-  { segmentStart :: Point
-    , segmentEnd :: Point
+  { _segmentStart :: Point
+    , _segmentEnd :: Point
   } deriving (Show)
-
+makeLenses ''Segment
 makePoint :: (Double, Double) -> Point
 makePoint (x, y) = Point x y
 

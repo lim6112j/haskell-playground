@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: b88d399cf50fdc6ce14509f03a8e6b80c90a8260fa8b35102aa26cab376f9aef
+-- hash: 6b705911ad9e49ecdc882d0d0ba59f153a5c8096bc10d9ef7105bcdd1b39d1e3
 
 name:           playground
 version:        0.1.0.0
@@ -37,6 +37,7 @@ library
   build-depends:
       base >=4.7 && <5
     , containers
+    , lens
     , mtl >=2.0 && <2.3
     , random
     , text
@@ -53,6 +54,7 @@ executable arrow
   build-depends:
       base >=4.7 && <5
     , containers
+    , lens
     , mtl >=2.0 && <2.3
     , random
     , text
@@ -69,6 +71,7 @@ executable exception
   build-depends:
       base >=4.7 && <5
     , containers
+    , lens
     , mtl >=2.0 && <2.3
     , random
     , text
@@ -85,6 +88,7 @@ executable lenses
   build-depends:
       base >=4.7 && <5
     , containers
+    , lens
     , mtl >=2.0 && <2.3
     , random
     , text
@@ -101,6 +105,7 @@ executable liftio
   build-depends:
       base >=4.7 && <5
     , containers
+    , lens
     , mtl >=2.0 && <2.3
     , random
     , text
@@ -118,6 +123,7 @@ executable playground-exe
   build-depends:
       base >=4.7 && <5
     , containers
+    , lens
     , mtl >=2.0 && <2.3
     , playground
     , random
@@ -135,6 +141,7 @@ executable reversepolish-exe
   build-depends:
       base >=4.7 && <5
     , containers
+    , lens
     , mtl >=2.0 && <2.3
     , random
     , text
@@ -151,6 +158,7 @@ executable rwst-exe
   build-depends:
       base >=4.7 && <5
     , containers
+    , lens
     , mtl >=2.0 && <2.3
     , random
     , text
@@ -167,6 +175,7 @@ executable simplereader-exe
   build-depends:
       base >=4.7 && <5
     , containers >=0.6.3
+    , lens
     , mtl >=2.0 && <2.3
     , random
     , text
@@ -183,6 +192,7 @@ executable state-exe
   build-depends:
       base >=4.7 && <5
     , containers
+    , lens
     , mtl >=2.0 && <2.3
     , random
     , text
@@ -199,6 +209,7 @@ executable writer
   build-depends:
       base >=4.7 && <5
     , containers
+    , lens
     , mtl >=2.0 && <2.3
     , random
     , text
@@ -217,6 +228,7 @@ test-suite playground-test
   build-depends:
       base >=4.7 && <5
     , containers
+    , lens
     , mtl >=2.0 && <2.3
     , playground
     , random

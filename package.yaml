@@ -27,6 +27,7 @@ dependencies:
   - transformers
   - text
   - text-show
+  - lens
 library:
   source-dirs: src
 
