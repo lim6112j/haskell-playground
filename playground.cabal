@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: de886b4d998eee8b1e6c4937c956c13c873efe3657ca4ba087583517e68dcb92
+-- hash: 5d7516863acbc7a0cf05c13ef23ab8a339dc631bcb5310585937cf525ada1866
 
 name:           playground
 version:        0.1.0.0
@@ -68,6 +68,23 @@ executable exception
       Paths_playground
   hs-source-dirs:
       exceptionT
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , lens
+    , mtl >=2.0 && <2.3
+    , random
+    , text
+    , text-show
+    , transformers
+  default-language: Haskell2010
+
+executable foldLR
+  main-is: fold.hs
+  other-modules:
+      Paths_playground
+  hs-source-dirs:
+      foldLWithFoldR
   build-depends:
       base >=4.7 && <5
     , containers

@@ -78,6 +78,9 @@ executables:
   traversable:
     main: traversable.hs
     source-dirs: traversable
+  foldLR:
+    main: fold.hs
+    source-dirs: foldLWithFoldR
 tests:
   playground-test:
     main: Spec.hs
