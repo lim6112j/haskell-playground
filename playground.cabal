@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.35.0.
+-- This file has been generated from package.yaml by hpack version 0.35.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 5d7516863acbc7a0cf05c13ef23ab8a339dc631bcb5310585937cf525ada1866
+-- hash: 8e6d2fc1c3b43e371ff29858563a289cd3443b655bbc574c30c853f58c1cbceb
 
 name:           playground
 version:        0.1.0.0
@@ -85,6 +85,23 @@ executable foldLR
       Paths_playground
   hs-source-dirs:
       foldLWithFoldR
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , lens
+    , mtl >=2.0 && <2.3
+    , random
+    , text
+    , text-show
+    , transformers
+  default-language: Haskell2010
+
+executable jsonparser
+  main-is: jsonparser.hs
+  other-modules:
+      Paths_playground
+  hs-source-dirs:
+      json-parser
   build-depends:
       base >=4.7 && <5
     , containers

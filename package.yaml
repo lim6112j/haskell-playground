@@ -81,6 +81,9 @@ executables:
   foldLR:
     main: fold.hs
     source-dirs: foldLWithFoldR
+  jsonparser:
+    main: jsonparser.hs
+    source-dirs: json-parser
 tests:
   playground-test:
     main: Spec.hs
