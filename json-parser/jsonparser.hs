@@ -76,5 +76,13 @@ stringP str =
         Left $ ParserError (inputLoc input) ("Expected \"" ++ str ++ "\", but found \"" ++ inputStr input ++ "\"")
       result -> result
 
+-- jsonBool
+--
+jsonBool :: Parser JsonValue
+jsonBool = jsonTrue <|> jsonFalse
+  where
+    jsonTrue = JsonBool True <$ stringP "true"
+    jsonFalse = JsonBool False <$ stringP "false"
+
 main :: IO ()
 main = print "hello"
