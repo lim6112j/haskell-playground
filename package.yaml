@@ -84,6 +84,9 @@ executables:
   jsonparser:
     main: jsonparser.hs
     source-dirs: json-parser
+  applicative-exe:
+    main: app.hs
+    source-dirs: applicative
 tests:
   playground-test:
     main: Spec.hs
