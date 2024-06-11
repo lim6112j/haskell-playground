@@ -17,7 +17,7 @@ resolver: lts-20.8
 #
 # resolver: ./custom-snapshot.yaml
 # resolver: https://example.com/snapshots/2018-01-01.yaml
-#resolver: ghc-9.4.4
+#resolver: ghc-9.4.8
 # resolver:
 #   url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/20/8.yaml
 # User packages to be built.
