@@ -77,6 +77,24 @@ executable arrow
     , transformers
   default-language: Haskell2010
 
+executable du
+  main-is: Main.hs
+  other-modules:
+      AppTypes
+      Paths_playground
+  hs-source-dirs:
+      du
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , lens
+    , mtl >=2.0 && <2.3
+    , random
+    , text
+    , text-show
+    , transformers
+  default-language: Haskell2010
+
 executable exception
   main-is: exception.hs
   other-modules:

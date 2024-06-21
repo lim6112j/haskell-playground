@@ -64,6 +64,9 @@ executables:
   arrow:
     main: arrow.hs
     source-dirs: arrow
+  du:
+    main: Main.hs
+    source-dirs: du
   exception:
     main: exception.hs
     source-dirs: exceptionT
