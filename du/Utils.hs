@@ -1,5 +1,5 @@
 {-# LANGUAGE NamedFieldPuns #-}
-
+module Utils where
 import AppTypes
 import Control.Monad.Trans (MonadIO (liftIO))
 import Control.Monad.Trans.RWS.Lazy (ask, asks, local)
