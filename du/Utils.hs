@@ -7,6 +7,7 @@ import Data.Foldable.Extra (traverse_)
 import System.Directory.Extra (listDirectory)
 import System.FilePath ((</>))
 import System.PosixCompat.Files (FileStatus)
+import System.FilePath.Posix (isExtensionOf)
 
 currentPathStatus :: MyApp l s FileStatus
 currentPathStatus = do
@@ -25,3 +26,6 @@ traverseDirectoryWith app = do
           { path = path env </> name,
             depth = depth env + 1
           }
+checkExtension :: AppConfig  -> FilePath -> Bool
+checkExtension cfg fp =
+  maybe True (`isExtensionOf` fp) (extension cfg)

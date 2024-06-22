@@ -81,6 +81,9 @@ executable du
   main-is: Main.hs
   other-modules:
       AppTypes
+      DirTree
+      DiskUsage
+      FileCounter
       Utils
       Paths_playground
   hs-source-dirs:
