@@ -1,6 +1,7 @@
 {-# LANGUAGE RecordWildCards #-}
-
+module AppTypes where
 import Control.Monad.RWS.Lazy (RWST, evalRWST)
+import System.PosixCompat.Files (FileStatus)
 
 data AppConfig = AppConfig
   { basePath :: FilePath,
@@ -13,11 +14,11 @@ data AppEnv = AppEnv
   { cfg :: AppConfig,
     path :: FilePath,
     depth :: Int,
-    fileStatus :: FilePath
+    fileStatus :: FilePath -> IO FileStatus
   }
 
-intialEnv :: AppConfig -> AppEnv
-intialEnv config@AppConfig {..} =
+initialEnv :: AppConfig -> AppEnv
+initialEnv config@AppConfig {..} =
   AppEnv
     { cfg = config,
       path = basePath,

@@ -67,6 +67,14 @@ executables:
   du:
     main: Main.hs
     source-dirs: du
+    dependencies:
+      - filepath
+      - directory
+      - unix-compat
+      - extra
+      - optparse-applicative
+      - text
+      - text-show
   exception:
     main: exception.hs
     source-dirs: exceptionT
